@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left-nav">
+          <a href="#">Library System</a>
+        </div>
+        <div class="right-nav">
+          <a href="#Book">Books</a>
+          <a href="#Form">Register</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Logout</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="main" id="Book">
+      <div class="Books">
+        <table>
+          <caption>
+            <h1>Books</h1>
+          </caption>
+          <thead>
+            <tr>
+              <th>Book ID</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Genre</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <a href="#">Book Title 1</a>
+                <table>
+                  <tr>
+                    <td>Publication Date: 2000</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count: 250</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN: 123-4567890123</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Author Name 1</td>
+              <td>Genre 1</td>
+              <td>Available</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>
+                <a href="#">Book Title 2</a>
+                <table>
+                  <tr>
+                    <td>Publication Date: 2005</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count: 300</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN: 123-4567890456</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Author Name 2</td>
+              <td>Genre 2</td>
+              <td>Not Available</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>
+                <a href="#">Book Title 3</a>
+                <table>
+                  <tr>
+                    <td>Publication Date: 2010</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count: 350</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN: 123-4567890789</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Author Name 3</td>
+              <td>Genre 3</td>
+              <td>Available</td>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>
+                <a href="#">Book Title 4</a>
+                <table>
+                  <tr>
+                    <td>Publication Date: 2004</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count: 450</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN: 123-4567890124</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Author Name 4</td>
+              <td>Genre 4</td>
+              <td>Available</td>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>
+                <a href="#">Book Title 5</a>
+                <table>
+                  <tr>
+                    <td>Publication Date: 2002</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count: 250</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN: 123-4567890125</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Author Name 5</td>
+              <td>Genre 5</td>
+              <td>Not Available</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="registration-form">
+      <div class="form" id="Form">
+        <h1>Register</h1>
+        <form action="#" method="get">
+          <div class="form-control">
+            <label for="fname">First Name:</label> <br />
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              placeholder="Enter your first name"
+              required
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="lname">Last Name:</label> <br />
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              placeholder="Enter your last name"
+              required
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="dob">Date Of Birth:</label> <br />
+            <input type="date" name="dob" id="dob" required />
+          </div>
+
+          <div class="form-control">
+            <label for="age">Age:</label> <br />
+            <input
+              type="number"
+              min="5"
+              max="100"
+              name="age"
+              id="age"
+              required
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="email">Email:</label> <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email ID"
+              required
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="pswd">Password:</label> <br />
+            <input
+              type="password"
+              name="pswd"
+              id="pswd"
+              placeholder="Enter your password"
+              pattern="^(?:0(?=1|$))?(?:1(?=2|$))?(?:2(?=3|$))?(?:3(?=4|$))?(?:4(?=5|$))?(?:5(?=6|$))?(?:6(?=7|$))?(?:7(?=8|$))?(?:8(?=9|$))?(?:9$)?$"
+              required
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="confirm-pswd">Confirm Password:</label> <br />
+            <input
+              type="password"
+              name="confirm-pswd"
+              id="confirm-pswd"
+              pattern="^(?:0(?=1|$))?(?:1(?=2|$))?(?:2(?=3|$))?(?:3(?=4|$))?(?:4(?=5|$))?(?:5(?=6|$))?(?:6(?=7|$))?(?:7(?=8|$))?(?:8(?=9|$))?(?:9$)?$"
+              required
+            />
+          </div>
+
+          <div class="form-control">
+            <input type="submit" value="Register" class="submit-btn" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
